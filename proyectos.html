@@ -3,20 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Proyectos</title>
+    <title>Blog de Proyectos - Amelia Almeida</title>
+
+    <style>
+        body {
+            background-color: #e6f7ff; /* celeste suave */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #007acc;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 700px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        section h2 {
+            color: #007acc;
+            text-align: center;
+        }
+
+        ol {
+            padding-left: 30px;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* 📸 Estilo para centrar la imagen y hacerla ovalada */
+        #informacion-personal img {
+            display: block;
+            margin: 0 auto 20px auto; /* centra y agrega margen inferior */
+            border-radius: 50%; /* hace la imagen ovalada */
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* mantiene la proporción recortando si es necesario */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li> <a href="index.html">Index</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="estudios.html">Estudios</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li></li>
-            <li><a href="#">Proyectos</a></li></li>
-            <li><a href="contacto.html">Contactos</a></li></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
         </ul>
     </nav>
+
     <main> 
-        <h1>Inicio</h1>
+        <h1>Bienvenidos a mi blog personal</h1>
+        
+        <!-- 🌸 SECCIÓN SOBRE MÍ -->
+        <section id="informacion-personal">
+            <h2>Sobre mí</h2>
+            <img src="perfil.jpg" alt="Foto de Amelia Almeida">
+            
+            <p>Hola, soy <strong>Amelia Almeida</strong>, estudiante de <em>Negocios Digitales</em>. Me gusta la tecnología, la innovación y la creatividad. Me encanta aprender cosas nuevas y explorar el mundo digital desde diferentes perspectivas.</p>
+            
+            <h3>Datos personales</h3>
+            <ul>
+                <li><strong>Nombre completo:</strong> Ana Amelia Almeida Guacho</li>
+                <li><strong>Edad:</strong> 21 años</li>
+                <li><strong>Ciudad:</strong> Quito, Ecuador</li>
+                <li><strong>Correo:</strong> alemidaamelia581@gmail.com</li>
+            </ul>
+
+            <h3>Mi objetivo</h3>
+            <p>Mi meta es desarrollarme profesionalmente en el campo digital, aplicar estrategias de negocio para crear soluciones innovadoras que impulsen el crecimiento de las empresas y la comunidad.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos personales y profesionales</h2>
+            <p>Mis proyectos de vida se enfocan en el crecimiento personal, profesional y social. Considero que cada meta que me propongo es una oportunidad para mejorar y aportar positivamente a mi entorno.</p>
+
+            <ol>
+                <li>Finalizar mis estudios universitarios.</li>
+                <li>Crear mi propio emprendimiento y aplicar todos los conocimientos que me ha proporcionado mis estudios.</li>
+                <li>Continuar mi formación profesional realizando cursos, certificaciones y una maestría en transformación digital o innovación empresarial.</li>
+                <li>Desarrollarme en el ámbito laboral dentro de una empresa grande en Ecuador.</li>
+                <li>Viajar y conocer nuevas culturas.</li>
+            </ol>
+
+            <p>Estos proyectos representan mis aspiraciones y el compromiso que tengo conmigo misma para seguir aprendiendo, creciendo y alcanzando mis metas con pasión y esfuerzo.</p>
+        </section>
     </main>
 </body>
 </html>

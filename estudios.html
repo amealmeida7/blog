@@ -3,20 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Estudios</title>
+    <title>Mi Blog - Amelia Almeida</title>
+
+    <style>
+        /* 🎨 Fondo general */
+        body {
+            background-color: #e6f7ff; /* celeste suave */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 🌿 Menú de navegación */
+        nav {
+            background-color: #007acc; /* azul medio */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* 📘 Contenido principal */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 💡 Secciones generales */
+        section {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 700px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        section h2 {
+            color: #007acc;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* ✨ Lista de conocimientos */
+        .conocimientos li::before {
+            content: "⭐ ";
+        }
+    </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li> <a href="index.html">Index</a></li>
-            <li><a href="#">Estudios</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li></li>
-            <li><a href="proyectos.html">Proyectos</a></li></li>
-            <li><a href="contacto.html">Contactos</a></li></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="estudios.html">Estudios</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
         </ul>
     </nav>
+
     <main> 
-        <h1>Inicio</h1>
+        <h1>Bienvenidos a mi blog personal</h1>
+        
+        <!-- 🌸 SECCIÓN SOBRE MÍ -->
+        <section id="informacion-personal">
+            <h2>Sobre mí</h2>
+            <img src="perfil.jpg" alt="Foto de Amelia Almeida" width="200">
+            
+            <p>Hola, soy <strong>Amelia Almeida</strong>, estudiante de <em>Negocios Digitales</em>. Me gusta la tecnología, la innovación y la creatividad. Me encanta aprender cosas nuevas y explorar el mundo digital desde diferentes perspectivas.</p>
+            
+            <h3>Datos personales</h3>
+            <ul>
+                <li><strong>Nombre completo:</strong> Ana Amelia Almeida Guacho</li>
+                <li><strong>Edad:</strong> 21 años</li>
+                <li><strong>Ciudad:</strong> Quito, Ecuador</li>
+                <li><strong>Correo:</strong> alemidaamelia581@gmail.com</li>
+            </ul>
+
+            <h3>Mi objetivo</h3>
+            <p>Mi meta es desarrollarme profesionalmente en el campo digital, aplicar estrategias de negocio para crear soluciones innovadoras que impulsen el crecimiento de las empresas y la comunidad.</p>
+        </section>
+
+        <!-- 🎓 SECCIÓN DE ESTUDIOS -->
+        <section id="estudios">
+            <h2>Mis Estudios</h2>
+
+            <ul>
+                <li> <strong>Primaria:</strong> Colegio de América</li>
+                <li> <strong>Secundaria:</strong> Colegio Benalcázar</li>
+                <li> <strong>Educación superior:</strong> Universidad Politécnica Salesiana - Quito</li>
+            </ul>
+
+            <p>Actualmente curso la carrera de <strong>Negocios Digitales</strong> en la Universidad Politécnica Salesiana, donde desarrollo conocimientos en áreas como marketing digital, gestión empresarial, innovación tecnológica y transformación digital.</p>
+
+            <h3>Conocimientos y habilidades</h3>
+            <ul class="conocimientos">
+                <li>Marketing digital y redes sociales</li>
+                <li>Diseño Gráfico</li>
+                <li>Photoshop y Retoque de imagen</li>
+                <li>Comunicación efectiva y trabajo en equipo</li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
