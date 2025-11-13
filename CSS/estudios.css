@@ -1,128 +1,158 @@
-   body {
-       background-color: #e6f7ff;
-       /* celeste suave */
-       font-family: Arial, sans-serif;
-       margin: 0;
-       padding: 0;
-   }
+/* 🌸 ESTILO GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4edff; /* Lila muy suave */
+  color: #333;
+}
 
-   nav {
-       background-color: #007acc;
-       padding: 10px;
-   }
+/* 🔹 NAVEGACIÓN */
+nav {
+  background: linear-gradient(135deg, #a678f5, #b388eb);
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(122, 62, 227, 0.25);
+  max-width: 900px;
+  margin: 20px auto;
+}
 
-   nav ul {
-       list-style: none;
-       text-align: center;
-       margin: 0;
-       padding: 0;
-   }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-   nav ul li {
-       display: inline;
-       margin: 0 15px;
-   }
+nav ul li {
+  display: inline-block;
+  margin: 0 25px;
+}
 
-   nav ul li a {
-       color: white;
-       text-decoration: none;
-       font-weight: bold;
-   }
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
 
-   nav ul li a:hover {
-       text-decoration: underline;
-   }
+nav ul li a:hover,
+nav ul li a.activo {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.05);
+}
 
-   main {
-       padding: 20px;
-       text-align: center;
-   }
+/* 💜 SECCIÓN PRINCIPAL */
+main {
+  text-align: center;
+  padding: 50px 20px;
+}
 
-   section {
-       background-color: white;
-       border-radius: 15px;
-       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-       padding: 20px;
-       max-width: 700px;
-       margin: 30px auto;
-       text-align: left;
-   }
+/* 🏫 TÍTULO PRINCIPAL */
+h2 {
+  font-size: 28px;
+  color: #7a3ee3;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
 
-   section h2 {
-       color: #007acc;
-       text-align: center;
-   }
+/* 🖼️ TARJETAS DE ESTUDIOS */
+.contenedor-estudios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
 
-   ol {
-       padding-left: 30px;
-   }
+.tarjeta {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(122, 62, 227, 0.15);
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
 
-   ol li {
-       margin-bottom: 10px;
-   }
+.tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(122, 62, 227, 0.25);
+}
 
-   p {
-       text-align: justify;
-   }
+/* 📸 IMAGEN RECTANGULAR */
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
 
-   /* 📸 Imagen centrada y ovalada */
-   #informacion-personal img {
-       display: block;
-       margin: 0 auto 20px auto;
-       border-radius: 50%;
-       width: 200px;
-       height: 200px;
-       object-fit: cover;
-       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-   }
+/* 📋 TEXTO DE TARJETA */
+.tarjeta p {
+  background-color: #f3e8ff;
+  color: #4b0082;
+  padding: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 0 0 20px 20px;
+}
 
-   /* ✉️ Estilo de la sección de contacto */
-   #contacto ul {
-       list-style: none;
-       padding: 0;
-       text-align: center;
-   }
+/* ✨ DESCRIPCIÓN GENERAL */
+.descripcion {
+  max-width: 700px;
+  margin: 25px auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
+}
 
-   #contacto ul li {
-       margin-bottom: 10px;
-       font-size: 16px;
-   }
+/* 💡 LISTA DE CONOCIMIENTOS */
+.conocimientos {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
 
-   #contacto a {
-       color: #007acc;
-       text-decoration: none;
-   }
+.conocimientos li {
+  background-color: #e6d6ff;
+  display: inline-block;
+  padding: 10px 22px;
+  margin: 5px;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0 3px 8px rgba(122, 62, 227, 0.1);
+  transition: transform 0.2s ease;
+}
 
-   #contacto a:hover {
-       text-decoration: underline;
-   }
+.conocimientos li:hover {
+  transform: scale(1.05);
+}
 
-   form {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       margin-top: 15px;
-   }
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
 
-   input,
-   textarea {
-       width: 80%;
-       padding: 8px;
-       margin-bottom: 10px;
-       border: 1px solid #ccc;
-       border-radius: 8px;
-       font-size: 14px;
-   }
+  h2 {
+    font-size: 24px;
+  }
 
-   button {
-       background-color: #007acc;
-       color: white;
-       padding: 10px 20px;
-       border: none;
-       border-radius: 8px;
-       cursor: pointer;
-   }
+  .contenedor-estudios {
+    flex-direction: column;
+    align-items: center;
+  }
 
-   button:hover {
-       background-color: #005f99;
-   }
+  .tarjeta {
+    width: 85%;
+  }
+}

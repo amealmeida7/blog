@@ -1,77 +1,142 @@
+/* 🎨 Estilo unificado lila-blanco para sección de proyectos */
 
-        body {
-            background-color: #e6f7ff; /* celeste suave */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+/* Fondo general */
+body {
+    background-color: #f9f6ff; /* Fondo lavanda muy claro */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4b3b63;
+}
 
-        nav {
-            background-color: #007acc;
-            padding: 10px;
-        }
+/* 🌸 Barra de navegación idéntica al código base */
+nav {
+    background-color: #b388eb; /* Lila medio */
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 15px; /* Bordes suaves */
+    box-shadow: 0 0 15px rgba(179, 136, 235, 0.3);
+    padding: 15px 0;
+    box-sizing: border-box;
+}
 
-        nav ul {
-            list-style: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+nav ul li a:hover,
+nav ul li a.activo {
+    color: #f3e8ff; /* Lila claro al pasar el cursor */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
 
-        main {
-            padding: 20px;
-            text-align: center;
-        }
+/* 💼 Sección de proyectos */
+#proyectos {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
 
-        section {
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 700px;
-            margin: 30px auto;
-            text-align: left;
-        }
+/* Título */
+#proyectos h2 {
+    font-size: 2em;
+    color: #8e44ad;
+    margin-bottom: 30px;
+}
 
-        section h2 {
-            color: #007acc;
-            text-align: center;
-        }
+/* 🖼️ Galería tipo tarjetas */
+.galeria-proyectos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
 
-        ol {
-            padding-left: 30px;
-        }
+.tarjeta {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    width: 230px;
+    box-shadow: 0 6px 15px rgba(179, 136, 235, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        ol li {
-            margin-bottom: 10px;
-        }
+.tarjeta img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
 
-        p {
-            text-align: justify;
-        }
+.tarjeta p {
+    font-weight: 600;
+    color: #4b3b63;
+    font-size: 16px;
+}
 
-        /* 📸 Estilo para centrar la imagen y hacerla ovalada */
-        #informacion-personal img {
-            display: block;
-            margin: 0 auto 20px auto; /* centra y agrega margen inferior */
-            border-radius: 50%; /* hace la imagen ovalada */
-            width: 200px;
-            height: 200px;
-            object-fit: cover; /* mantiene la proporción recortando si es necesario */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(179, 136, 235, 0.35);
+}
+
+/* Texto general */
+#proyectos p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #4b3b63;
+}
+
+/* Lista ordenada */
+#proyectos ol {
+    list-style-position: inside;
+    text-align: left;
+    width: 60%;
+    margin: 0 auto 25px;
+    padding: 0;
+}
+
+#proyectos ol li {
+    margin: 10px 0;
+    font-size: 1.05em;
+    color: #4a148c;
+}
+
+/* Marcadores lilas */
+#proyectos ol li::marker {
+    color: #b388eb;
+}
+
+/* 🌐 Responsive */
+@media (max-width: 768px) {
+    .galeria-proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 80%;
+    }
+
+    #proyectos ol {
+        width: 90%;
+    }
+}

@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog - Amelia Almeida</title>
-
-  <link rel="stylesheet" href="CSS/estudios.css"> 
+    <title>Mis Estudios - Amelia Almeida</title>
+    <link rel="stylesheet" href="CSS/estudios.css"> 
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="estudios.html">Estudios</a></li>
+            <li><a href="estudios.html" class="activo">Estudios</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
             <li><a href="contacto.html">Contactos</a></li>
         </ul>
     </nav>
 
-    <main> 
-        <h1>Bienvenidos a mi blog personal</h1>
-
-        <!-- 🎓 SECCIÓN DE ESTUDIOS -->
+    <main>
         <section id="estudios">
             <h2>Mis Estudios</h2>
+            <div class="contenedor-estudios">
+                <div class="tarjeta">
+                    <img src="imagenes/america.jpg" alt="Primaria">
+                    <p><strong>Primaria:</strong> Colegio de América</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="imagenes/benalcazar.jpg" alt="Secundaria">
+                    <p><strong>Secundaria:</strong> Colegio Benalcázar</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="imagenes/salesiana.jpg" alt="Educación superior">
+                    <p><strong>Educación superior:</strong> Universidad Politécnica Salesiana - Quito</p>
+                </div>
+            </div>
 
-            <ul>
-                <li> <strong>Primaria:</strong> Colegio de América</li>
-                <li> <strong>Secundaria:</strong> Colegio Benalcázar</li>
-                <li> <strong>Educación superior:</strong> Universidad Politécnica Salesiana - Quito</li>
-            </ul>
-
-            <p>Actualmente curso la carrera de <strong>Negocios Digitales</strong> en la Universidad Politécnica Salesiana, donde desarrollo conocimientos en áreas como marketing digital, gestión empresarial, innovación tecnológica y transformación digital.</p>
+            <p class="descripcion">Actualmente curso la carrera de <strong>Negocios Digitales</strong> en la Universidad Politécnica Salesiana, donde desarrollo conocimientos en áreas como marketing digital, gestión empresarial, innovación tecnológica y transformación digital.</p>
 
             <h3>Conocimientos y habilidades</h3>
             <ul class="conocimientos">
                 <li>Marketing digital y redes sociales</li>
-                <li>Diseño Gráfico</li>
-                <li>Photoshop y Retoque de imagen</li>
+                <li>Diseño gráfico</li>
+                <li>Photoshop y retoque de imagen</li>
                 <li>Comunicación efectiva y trabajo en equipo</li>
             </ul>
         </section>

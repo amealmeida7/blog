@@ -1,128 +1,184 @@
-   body {
-       background-color: #e6f7ff;
-       /* celeste suave */
-       font-family: Arial, sans-serif;
-       margin: 0;
-       padding: 0;
-   }
+/* 🌸 ESTILO GENERAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4edff; /* Lila muy suave */
+  color: #333;
+}
 
-   nav {
-       background-color: #007acc;
-       padding: 10px;
-   }
+/* 🔹 NAVEGACIÓN */
+nav {
+  background: linear-gradient(135deg, #a678f5, #b388eb);
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(122, 62, 227, 0.25);
+  max-width: 900px;
+  margin: 20px auto;
+}
 
-   nav ul {
-       list-style: none;
-       text-align: center;
-       margin: 0;
-       padding: 0;
-   }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-   nav ul li {
-       display: inline;
-       margin: 0 15px;
-   }
+nav ul li {
+  display: inline-block;
+  margin: 0 25px;
+}
 
-   nav ul li a {
-       color: white;
-       text-decoration: none;
-       font-weight: bold;
-   }
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
 
-   nav ul li a:hover {
-       text-decoration: underline;
-   }
+nav ul li a:hover,
+nav ul li a.activo {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transform: scale(1.05);
+}
 
-   main {
-       padding: 20px;
-       text-align: center;
-   }
+/* 💜 SECCIONES PRINCIPALES */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
 
-   section {
-       background-color: white;
-       border-radius: 15px;
-       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-       padding: 20px;
-       max-width: 700px;
-       margin: 30px auto;
-       text-align: left;
-   }
+section {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(122, 62, 227, 0.15);
+  padding: 30px;
+  max-width: 800px;
+  margin: 30px auto;
+  color: #333;
+  text-align: left;
+}
 
-   section h2 {
-       color: #007acc;
-       text-align: center;
-   }
+section h2 {
+  color: #7a3ee3;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
 
-   ol {
-       padding-left: 30px;
-   }
+/* 📋 LISTAS ORDENADAS */
+ol {
+  padding-left: 30px;
+}
 
-   ol li {
-       margin-bottom: 10px;
-   }
+ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
 
-   p {
-       text-align: justify;
-   }
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
 
-   /* 📸 Imagen centrada y ovalada */
-   #informacion-personal img {
-       display: block;
-       margin: 0 auto 20px auto;
-       border-radius: 50%;
-       width: 200px;
-       height: 200px;
-       object-fit: cover;
-       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-   }
+/* 📸 IMAGEN DE PERFIL RECTANGULAR */
+#informacion-personal img {
+  display: block;
+  margin: 0 auto 25px auto;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px; /* Rectangular, no ovalada */
+  box-shadow: 0 4px 20px rgba(122, 62, 227, 0.3);
+}
 
-   /* ✉️ Estilo de la sección de contacto */
-   #contacto ul {
-       list-style: none;
-       padding: 0;
-       text-align: center;
-   }
+/* ✉️ SECCIÓN DE CONTACTO */
+#contacto ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
 
-   #contacto ul li {
-       margin-bottom: 10px;
-       font-size: 16px;
-   }
+#contacto ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
 
-   #contacto a {
-       color: #007acc;
-       text-decoration: none;
-   }
+#contacto a {
+  color: #7a3ee3;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-   #contacto a:hover {
-       text-decoration: underline;
-   }
+#contacto a:hover {
+  color: #b388eb;
+  text-decoration: underline;
+}
 
-   form {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       margin-top: 15px;
-   }
+/* 📩 FORMULARIO */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
 
-   input,
-   textarea {
-       width: 80%;
-       padding: 8px;
-       margin-bottom: 10px;
-       border: 1px solid #ccc;
-       border-radius: 8px;
-       font-size: 14px;
-   }
+input,
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #d3bce8;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #faf5ff;
+  font-family: "Poppins", sans-serif;
+}
 
-   button {
-       background-color: #007acc;
-       color: white;
-       padding: 10px 20px;
-       border: none;
-       border-radius: 8px;
-       cursor: pointer;
-   }
+button {
+  background: linear-gradient(135deg, #a678f5, #b388eb);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
 
-   button:hover {
-       background-color: #005f99;
-   }
+button:hover {
+  background: linear-gradient(135deg, #9a5ff4, #a874eb);
+  transform: scale(1.05);
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 25px;
+    margin: 20px;
+  }
+
+  #informacion-personal img {
+    width: 180px;
+    height: 180px;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  button {
+    width: 60%;
+  }
+}
